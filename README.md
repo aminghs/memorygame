@@ -1,3 +1,3 @@
-# memorygame
+# Memorygame
 
-This is a memory game just for test.
+For Jensen assignment
