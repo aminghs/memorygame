@@ -79,7 +79,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 span.onclick = function() {
   modal.style.display = "none";
-  location.reload();
+  this.resetBoard();
 }
 
 window.onclick = function(event) {
