@@ -66,7 +66,7 @@ function unflipCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
-}
+};
 
 (function shuffle() {
   cards.forEach(card => {
@@ -77,14 +77,16 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+
 span.onclick = function() {
   modal.style.display = "none";
   resetBoard();
-}
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     resetBoard();
   }
-}
+};
